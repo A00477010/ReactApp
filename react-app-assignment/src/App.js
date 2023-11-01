@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-import AboutMe from "./Components/AboutMe";
-import MyTown from "./Components/MyTown";
+import AboutMe from "./Components/Pages/AboutMe";
+import MyTown from "./Components/Pages/MyTown";
 
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
