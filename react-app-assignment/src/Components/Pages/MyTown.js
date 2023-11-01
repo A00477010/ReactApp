@@ -45,11 +45,11 @@ function MyTown() {
     if (variable === "Convert to C") {
       setVar("Convert to F");
       setTemp((temperature * 9) / 5 + 32);
-      setUnit("F");
+      setUnit("C");
     } else {
       setVar("Convert to C");
       setTemp(((temperature - 32) * 5) / 9);
-      setUnit("C");
+      setUnit("F");
     }
   };
 
