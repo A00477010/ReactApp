@@ -12,8 +12,8 @@ import sunny from "../../Images/sunny (1).png";
 function MyTown() {
   const [temperature, setTemp] = useState(0);
   const [imageName, setImage] = useState(sunny);
-  const [variable, setVar] = useState("Convert to C");
-  const [unit, setUnit] = useState("F");
+  const [variable, setVar] = useState("Convert to F");
+  const [unit, setUnit] = useState("C");
   // //
 
   useEffect(() => {
@@ -42,14 +42,14 @@ function MyTown() {
   }, []);
 
   const switchTemp = () => {
-    if (variable === "Convert to C") {
-      setVar("Convert to F");
-      setTemp((temperature * 9) / 5 + 32);
-      setUnit("C");
-    } else {
+    if (variable === "Convert to F") {
       setVar("Convert to C");
-      setTemp(((temperature - 32) * 5) / 9);
+      setTemp((temperature * 9) / 5 + 32);
       setUnit("F");
+    } else {
+      setVar("Convert to F");
+      setTemp(((temperature - 32) * 5) / 9);
+      setUnit("C");
     }
   };
 
